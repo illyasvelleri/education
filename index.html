@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Consultancy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!----icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <!-- Header -->
+    <header>
+        <nav class="shadow">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><i class="bi bi-balloon-heart-fill"></i></a>
+                    <span>FAST <br>EDUCATION</span>
+                </div>
+                <button class="booking-btn" onclick="openWhatsApp()">Book Now</button>
+
+                <button class="navbar-toggler">
+                    <span class="open-icon"><i class="bi bi-list"></i></span>
+                    <span class="close-icon d-none"><i class="bi bi-x-lg"></i></span>
+                </button>
+
+                <ul class="nav-items ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <div class="hero-content text-center text-white">
+            <h1>Welcome to <span>Fast Education</span> Consultancy</h1>
+            <p>Your path to academic success starts here.</p>
+            <a href="https://wa.me/918606746083?text=Hello%20I%20would%20like%20to%20get%20in%20touch" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services fade-in">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Consulting</h3>
+                            <p class="card-text">Expert guidance for your academic journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Tutoring</h3>
+                            <p class="card-text">Personalized tutoring for all subjects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Career Counseling</h3>
+                            <p class="card-text">Advice on career paths and higher education.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Exam Preparation</h3>
+                            <p class="card-text">Comprehensive preparation for your exams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about fade-in">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">Welcome to Fast Education! Nestled in the vibrant heart of Malappuram, Kerala, we
+                bring over three years of dedicated experience to empower our community with top-notch educational
+                solutions. At Fast Education, we blend our deep local knowledge with professional expertise to craft
+                personalized strategies that truly make a difference.</p>
+            <p>Our journey has been driven by a passion for excellence and a commitment to meeting the unique needs of
+                each client. Whether you're a student aiming for academic success or a professional seeking career
+                guidance, we’re here to illuminate your path with tailored, high-quality solutions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="margin-top: 140px;">
+        <div class="container contact-form-container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center text-secondary mb-5">We’re thrilled to connect with you! Whether you have questions
+                about our services, need expert advice, or simply want to get in touch, our team is here to assist you.
+                Reach out to us using the contact information below:</p>
+            <div class="row">
+                <h3 class="mb-3 ps-4">Need Support?</h3>
+                <div class="col-md-6 contact-form" id="contact">
+                    <form id="contactForm">
+                        <!-- <p>We're here to help! Contact us for a quote or assistance in joining our team.</p> -->
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="place">Place:</label><br>
+                        <input type="text" id="place" name="place" required><br><br>
+
+                        <label for="contact">Contact Number:</label><br>
+                        <input type="tel" id="contact" name="contact" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" required></textarea><br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 location" id="location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31277.95492016229!2d76.00137963755424!3d11.498355726628983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba66c4c7455ba79%3A0xe22fc2e2882e0689!2sThamarassery%20Churam!5e0!3m2!1sen!2sin!4v1723915843623!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="margin-top: 120px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Location</h3>
+                    <p>Kallai Road,
+                        Railway Station:200mts,
+                        Calicut Airport: 28kms</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Email</h3>
+                    <p>Email:sample@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>WhatsApp</h3>
+                    <p>+971 123 4567 890</p>
+                    <p>+971 123 4567 890</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-3" style="margin-top: 60px;">
+            <p>&copy; 2024 Educational Consultancy. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
